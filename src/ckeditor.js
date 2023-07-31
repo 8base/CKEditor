@@ -104,6 +104,15 @@ const config = {
     ],
   },
   language: "en",
+  image: {
+    toolbar: [
+      "imageTextAlternative",
+      "toggleImageCaption",
+      "imageStyle:inline",
+      "imageStyle:block",
+      "imageStyle:side",
+    ],
+  },
   table: {
     contentToolbar: ["tableColumn", "tableRow", "mergeTableCells"],
   },
@@ -115,28 +124,27 @@ Document.defaultConfig = config;
 Ballon.defaultConfig = config;
 BallonBlock.defaultConfig = {
   toolbar: {
-    items: [
-      "heading",
-      "|",
-      "bold",
-      "italic",
-      "link",
-      "bulletedList",
-      "numberedList",
-      "|",
-      "outdent",
-      "indent",
-      "|",
-      "imageUpload",
-      "blockQuote",
-      "insertTable",
-      "mediaEmbed",
-      "undo",
-      "redo",
+    items: ["bold", "italic", "link"],
+  },
+  language: "en",
+  blockToolbar: [
+    "heading",
+    "blockQuote",
+    "indent",
+    "outdent",
+    "numberedList",
+    "bulletedList",
+    "insertTable",
+  ],
+  image: {
+    toolbar: [
+      "imageTextAlternative",
+      "toggleImageCaption",
+      "imageStyle:inline",
+      "imageStyle:block",
+      "imageStyle:side",
     ],
   },
-  blockToolbar: ["blockQuote", "heading"],
-  language: "en",
   table: {
     contentToolbar: ["tableColumn", "tableRow", "mergeTableCells"],
   },
